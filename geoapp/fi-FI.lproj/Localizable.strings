@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  geoapp
+
+  Created by iosdev on 3.5.2020.
+  Copyright © 2020 team geo app. All rights reserved.
+*/
+"Not allowed" = "Ei sallittu";
+"Username cannot be shorter than 3 characters." = "Käyttäjätunnus, jossa on vähintään 3 merkkiä.";
+"Password cannot be shorter than 5 characters." = "Salasana, jossa on vähintään 5 merkkiä.";
+"Field cannot be empty." = "Tekstikenttä ei voi olla tyhjä.";
+"Not available" = "Ei saatavilla";
+"Username already exists" = "Antamasi käyttäjänimi on varattu.";
+"Invalid email." = "Virheellinen sähköpostiosoite.";
+"The user is not signed in." = "Käyttäjä ei ole kirjautunut sisään.";
+"Normal: %d points" = "Normaalitila: %d pistettä";
+"Challenge: %d points" = "Haaste-tila: %d pistettä";
+"Normal mode" = "Normaalitila";
+"Challenge mode" = "Haaste-tila";
+"Sign Up" = "Ilmoittautua";
+"Confirm" = "Vahvistaa";
+"Finish" = "Valmis";
+"Error" = "Virhe";
+"Cancel" = "Peruuttaa";
+"Alert" = "Hälytys";
+"You haven't made a guess." = "Et ole tehnyt arvausta.";
+"You got %d points." = "Sinulla on %d pistettä.";
+"Your progress will be lost." = "Edistyminen menetetään.";
+"You scored %d/5000 points." = " Sinulla on %d/5000 pistettä.";
+"Your guess is %d km away from the answer." ="Arvauksesi on %d km vastauksesta.";
+"Failed to sign in" = "Sisäänkirjautuminen epäonnistui";
+"Username or password is incorrect." = "Väärä käyttäjätunnus tai salasana.";
+"This is trial mode." = "Tämä on kokeilutila.";
+"Do you want to quit?" = "Haluatko lopettaa?";

@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "←"; ObjectID = "cq8-hc-7Y2"; */
+"cq8-hc-7Y2.normalTitle" = "←";
+
+/* Class = "UILabel"; text = "12345"; ObjectID = "gjZ-N4-vMs"; */
+"gjZ-N4-vMs.text" = "12345";
+
+/* Class = "UIButton"; normalTitle = "ARVAUS"; ObjectID = "hmp-xJ-ePi"; */
+"hmp-xJ-ePi.normalTitle" = "ARVAUS";
+
+/* Class = "UIBarButtonItem"; title = "Takaisin"; ObjectID = "w2P-yZ-xbl"; */
+"w2P-yZ-xbl.title" = "Takaisin";
+
+/* Class = "UINavigationItem"; title = "MISSÄ SINÄ OLET ?"; ObjectID = "xoq-Sv-8tP"; */
+"xoq-Sv-8tP.title" = "MISSÄ SINÄ OLET ?";

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1cR-Dm-TIs">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DEH-1Q-8Xs">
+            <objects>
+                <tabBarController id="1cR-Dm-TIs" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wfG-oL-DQX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SrE-e3-MHm" kind="relationship" relationship="viewControllers" id="Ov5-eG-PTQ"/>
+                        <segue destination="pl8-o4-f2S" kind="relationship" relationship="viewControllers" id="UlY-Cp-vhj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FdU-ag-2LS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-806" y="-569"/>
+        </scene>
+        <!--challengeTable-->
+        <scene sceneID="SwF-w9-Nuf">
+            <objects>
+                <tableViewController title="challengeTable" id="ngi-Ll-5e6" customClass="ChallengeModeScoreTableViewController" customModule="geoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1VX-h2-e3P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="challengeScoreItemCell" rowHeight="120" id="GJq-D0-hs9" customClass="ChallengeModeScoreTableViewCell" customModule="geoapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GJq-D0-hs9" id="Fic-0O-Lwa">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEt-1f-9fi">
+                                            <rect key="frame" x="20" y="0.0" width="165.66666666666666" height="120"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="37"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtQ-Pr-nym">
+                                            <rect key="frame" x="228.33333333333337" y="0.0" width="165.66666666666663" height="120"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="27"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="37"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="XtQ-Pr-nym" secondAttribute="bottom" id="4PQ-Oa-Cfy"/>
+                                        <constraint firstAttribute="trailing" secondItem="XtQ-Pr-nym" secondAttribute="trailing" constant="20" id="D6S-rM-Svn"/>
+                                        <constraint firstItem="XtQ-Pr-nym" firstAttribute="top" secondItem="Fic-0O-Lwa" secondAttribute="top" id="DTu-UY-Xd0"/>
+                                        <constraint firstItem="XtQ-Pr-nym" firstAttribute="width" secondItem="Fic-0O-Lwa" secondAttribute="width" multiplier="0.4" id="bos-9Z-HHU"/>
+                                        <constraint firstItem="HEt-1f-9fi" firstAttribute="width" secondItem="Fic-0O-Lwa" secondAttribute="width" multiplier="0.4" id="kBE-DP-0a8"/>
+                                        <constraint firstAttribute="bottom" secondItem="HEt-1f-9fi" secondAttribute="bottom" id="pKE-w2-EmI"/>
+                                        <constraint firstItem="XtQ-Pr-nym" firstAttribute="leading" secondItem="HEt-1f-9fi" secondAttribute="trailing" id="sGo-Vx-iPW"/>
+                                        <constraint firstItem="HEt-1f-9fi" firstAttribute="top" secondItem="Fic-0O-Lwa" secondAttribute="top" id="uLv-cu-ut4"/>
+                                        <constraint firstItem="HEt-1f-9fi" firstAttribute="leading" secondItem="Fic-0O-Lwa" secondAttribute="leading" constant="20" id="wDS-wX-g8B"/>
+                                        <constraint firstItem="XtQ-Pr-nym" firstAttribute="leading" secondItem="HEt-1f-9fi" secondAttribute="trailing" id="zfb-SN-fPU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="scoreLabel" destination="XtQ-Pr-nym" id="SBZ-Ru-Gju"/>
+                                    <outlet property="usernameLabel" destination="HEt-1f-9fi" id="ZmW-Yq-LXC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ngi-Ll-5e6" id="zCS-UF-o7q"/>
+                            <outlet property="delegate" destination="ngi-Ll-5e6" id="0Dd-dg-mWF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="D6a-Tg-D9U">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="pzj-Hr-apK">
+                            <connections>
+                                <segue destination="gkG-Xm-9nu" kind="presentation" modalPresentationStyle="fullScreen" id="ywC-Dp-tUN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="challengeTable" destination="1VX-h2-e3P" id="Al3-Tv-lVr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dvx-fK-Enf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1328" y="-194"/>
+        </scene>
+        <!--normalTable-->
+        <scene sceneID="Axx-12-sCU">
+            <objects>
+                <tableViewController title="normalTable" id="1KH-Sm-Pil" customClass="UserScoreTableViewController" customModule="geoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mmg-Sx-LrL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="scoreItemCell" rowHeight="120" id="EHa-P4-bXv" customClass="UserScoreTableViewCell" customModule="geoapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EHa-P4-bXv" id="uYa-UN-AHA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azr-FT-cMS">
+                                            <rect key="frame" x="20" y="0.0" width="165.66666666666666" height="120"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="37"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C12-SZ-cQb">
+                                            <rect key="frame" x="228.33333333333337" y="0.0" width="165.66666666666663" height="120"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="27"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="37"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="azr-FT-cMS" firstAttribute="leading" secondItem="uYa-UN-AHA" secondAttribute="leading" constant="20" id="6kM-uY-X2n"/>
+                                        <constraint firstItem="C12-SZ-cQb" firstAttribute="leading" secondItem="azr-FT-cMS" secondAttribute="trailing" id="8gS-0k-lVc"/>
+                                        <constraint firstItem="C12-SZ-cQb" firstAttribute="width" secondItem="uYa-UN-AHA" secondAttribute="width" multiplier="0.4" id="F3V-h2-ZyN"/>
+                                        <constraint firstAttribute="trailing" secondItem="C12-SZ-cQb" secondAttribute="trailing" constant="20" id="Hhw-BM-lN2"/>
+                                        <constraint firstItem="C12-SZ-cQb" firstAttribute="top" secondItem="uYa-UN-AHA" secondAttribute="top" id="Upd-ad-bxb"/>
+                                        <constraint firstAttribute="bottom" secondItem="azr-FT-cMS" secondAttribute="bottom" id="bDi-Y1-VO6"/>
+                                        <constraint firstItem="azr-FT-cMS" firstAttribute="top" secondItem="uYa-UN-AHA" secondAttribute="top" id="ed1-t6-tWC"/>
+                                        <constraint firstItem="C12-SZ-cQb" firstAttribute="leading" secondItem="azr-FT-cMS" secondAttribute="trailing" id="gm5-AQ-lNx"/>
+                                        <constraint firstItem="azr-FT-cMS" firstAttribute="width" secondItem="uYa-UN-AHA" secondAttribute="width" multiplier="0.4" id="t1I-SP-MWm"/>
+                                        <constraint firstAttribute="bottom" secondItem="C12-SZ-cQb" secondAttribute="bottom" id="vn0-ub-6fN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="scoreLabel" destination="C12-SZ-cQb" id="MeI-E5-1TH"/>
+                                    <outlet property="usernameLabel" destination="azr-FT-cMS" id="e2d-K7-aqG"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1KH-Sm-Pil" id="Owi-Vo-elM"/>
+                            <outlet property="delegate" destination="1KH-Sm-Pil" id="DWT-ak-t0O"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="AjE-Cg-49R">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Mzd-n9-edW"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="s59-Xw-VYH">
+                            <connections>
+                                <segue destination="gkG-Xm-9nu" kind="presentation" modalPresentationStyle="fullScreen" id="05k-7S-pPS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="normalTable" destination="Mmg-Sx-LrL" id="guI-Sl-yeq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15m-pa-JSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1328" y="-860"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="QJc-YO-huo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="gkG-Xm-9nu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UUk-AI-yNT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OED-fv-FzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2449" y="-569"/>
+        </scene>
+        <!--Challenge-->
+        <scene sceneID="gkv-R8-L1Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pl8-o4-f2S" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Challenge" id="9DL-7D-p1J"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jKJ-9v-ID6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ngi-Ll-5e6" kind="relationship" relationship="rootViewController" id="G8J-C0-cU6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SjC-xF-Iik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="-193"/>
+        </scene>
+        <!--Normal-->
+        <scene sceneID="f2a-hS-Igu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SrE-e3-MHm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Normal" id="QTg-kL-hhW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ixK-SD-5Mi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1KH-Sm-Pil" kind="relationship" relationship="rootViewController" id="TNL-6Q-BfF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIR-LU-Uri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="-860"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ywC-Dp-tUN"/>
+    </inferredMetricsTieBreakers>
+</document>

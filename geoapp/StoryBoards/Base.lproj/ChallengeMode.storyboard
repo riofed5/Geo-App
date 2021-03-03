@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bi1-Ug-qrY">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GuessMap-->
+        <scene sceneID="M7Q-1R-pSb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GuessMap" id="8Es-Eh-pDa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hyA-EC-hCl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NbU-8S-kph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661" y="91"/>
+        </scene>
+        <!--WHERE ARE YOU ?-->
+        <scene sceneID="Pjp-oA-Iyt">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Cdh-V3-pn9" customClass="ChallengeModeVC" customModule="geoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XEz-gH-D57">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYQ-a9-CSm" customClass="GMSPanoramaView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4L-bb-SkX">
+                                        <rect key="frame" x="20" y="100" width="31.5" height="25.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="house.fill" catalog="system">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="alert2:" destination="Cdh-V3-pn9" eventType="touchUpInside" id="WdU-l7-Nuu"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" id="XyC-Mf-sCV">
+                                        <rect key="frame" x="0.0" y="88" width="49" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <viewLayoutGuide key="safeArea" id="hJU-H7-b7b"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZ6-Gr-69E">
+                                        <rect key="frame" x="236" y="100" width="64" height="25.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="GUESS">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="8Es-Eh-pDa" kind="show" id="NxO-aA-pd0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeX-Pl-lsd">
+                                        <rect key="frame" x="184" y="401" width="96" height="19"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SK-54-Xpc">
+                                        <rect key="frame" x="112" y="100" width="96" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="35"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="challengeView"/>
+                                <constraints>
+                                    <constraint firstItem="7SK-54-Xpc" firstAttribute="centerX" secondItem="LYQ-a9-CSm" secondAttribute="centerX" id="3LI-bd-1wU"/>
+                                    <constraint firstItem="7SK-54-Xpc" firstAttribute="height" secondItem="PZ6-Gr-69E" secondAttribute="height" id="F1U-tI-hsm"/>
+                                    <constraint firstItem="7SK-54-Xpc" firstAttribute="top" secondItem="LYQ-a9-CSm" secondAttribute="top" constant="100" id="UCl-Kf-iUv"/>
+                                    <constraint firstAttribute="bottom" secondItem="SeX-Pl-lsd" secondAttribute="bottom" constant="60" id="dia-JQ-nTs"/>
+                                    <constraint firstItem="E4L-bb-SkX" firstAttribute="leading" secondItem="LYQ-a9-CSm" secondAttribute="leading" constant="20" id="lHS-TF-mam"/>
+                                    <constraint firstAttribute="trailing" secondItem="SeX-Pl-lsd" secondAttribute="trailing" constant="40" id="n9g-xp-YKh"/>
+                                    <constraint firstAttribute="trailing" secondItem="PZ6-Gr-69E" secondAttribute="trailing" constant="20" id="oNP-po-CX3"/>
+                                    <constraint firstItem="7SK-54-Xpc" firstAttribute="width" secondItem="LYQ-a9-CSm" secondAttribute="width" multiplier="0.3" id="qZ9-UR-gOo"/>
+                                    <constraint firstItem="E4L-bb-SkX" firstAttribute="top" secondItem="LYQ-a9-CSm" secondAttribute="top" constant="100" id="rVf-VM-N6C"/>
+                                    <constraint firstItem="PZ6-Gr-69E" firstAttribute="top" secondItem="LYQ-a9-CSm" secondAttribute="top" constant="100" id="sDa-RE-unV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="z4e-8V-Uok" firstAttribute="trailing" secondItem="LYQ-a9-CSm" secondAttribute="trailing" id="0r0-YJ-sgI"/>
+                            <constraint firstItem="SeX-Pl-lsd" firstAttribute="width" secondItem="XEz-gH-D57" secondAttribute="width" multiplier="0.3" id="Agu-Bc-Z6b"/>
+                            <constraint firstItem="LYQ-a9-CSm" firstAttribute="leading" secondItem="z4e-8V-Uok" secondAttribute="leading" id="Bk4-0q-YU8"/>
+                            <constraint firstItem="PZ6-Gr-69E" firstAttribute="height" secondItem="XEz-gH-D57" secondAttribute="height" multiplier="0.0535714" id="DtO-ex-FTq"/>
+                            <constraint firstItem="LYQ-a9-CSm" firstAttribute="top" secondItem="XEz-gH-D57" secondAttribute="top" id="FoJ-sd-T5u"/>
+                            <constraint firstAttribute="bottom" secondItem="LYQ-a9-CSm" secondAttribute="bottom" id="Y6n-xp-del"/>
+                            <constraint firstItem="PZ6-Gr-69E" firstAttribute="width" secondItem="XEz-gH-D57" secondAttribute="width" multiplier="0.2" id="b5h-Sf-U3m"/>
+                            <constraint firstItem="SeX-Pl-lsd" firstAttribute="height" secondItem="XEz-gH-D57" secondAttribute="height" multiplier="0.04" id="ijY-pe-bSf"/>
+                            <constraint firstItem="E4L-bb-SkX" firstAttribute="height" secondItem="XEz-gH-D57" secondAttribute="height" multiplier="0.0535714" id="rYu-ed-y2Y"/>
+                            <constraint firstItem="E4L-bb-SkX" firstAttribute="width" secondItem="XEz-gH-D57" secondAttribute="width" multiplier="0.0990338" id="uuk-ye-bd5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z4e-8V-Uok"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WHERE ARE YOU ?" id="7fh-Ej-ChP">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ra3-ZS-iIe"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backBtn" destination="E4L-bb-SkX" id="uyA-x6-cML"/>
+                        <outlet property="cdownLbl" destination="SeX-Pl-lsd" id="Zga-iZ-aFZ"/>
+                        <outlet property="currentScore" destination="7SK-54-Xpc" id="Cp6-wI-YqW"/>
+                        <outlet property="guessBtn" destination="PZ6-Gr-69E" id="c6N-Fv-SyC"/>
+                        <outlet property="panoramaView" destination="LYQ-a9-CSm" id="1BN-4l-6zB"/>
+                        <outlet property="progressView" destination="XyC-Mf-sCV" id="Tye-bK-IGe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPI-gA-fbc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046.376811594203" y="90.489130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9hl-oj-iem">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bi1-Ug-qrY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="86p-be-h2U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cdh-V3-pn9" kind="relationship" relationship="rootViewController" id="ofm-tj-d5C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjT-GS-Nej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+    </resources>
+</document>

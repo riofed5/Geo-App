@@ -1,0 +1,29 @@
+
+/* Class = "UILabel"; text = "Challenge"; ObjectID = "0vT-Rp-zrV"; */
+"0vT-Rp-zrV.text" = "Haaste";
+
+/* Class = "UILabel"; text = "30"; ObjectID = "2oa-hj-PIH"; */
+"2oa-hj-PIH.text" = "30";
+
+/* Class = "UIButton"; normalTitle = "Sign Out"; ObjectID = "7Ul-h5-bsw"; */
+"7Ul-h5-bsw.normalTitle" = "Kirjaudu ulos";
+
+/* Class = "UILabel"; text = "Normal"; ObjectID = "QO1-x5-Was"; */
+"QO1-x5-Was.text" = "Normalli";
+
+/* Class = "UIButton"; normalTitle = "Score Board"; ObjectID = "agL-G6-PdY"; */
+"agL-G6-PdY.normalTitle" = "Tulostaulu";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "bjB-Ib-hkl"; */
+"bjB-Ib-hkl.text" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Challenge"; ObjectID = "lVB-ee-9IJ"; */
+"lVB-ee-9IJ.normalTitle" = "Haaste";
+
+/* Class = "UIButton"; normalTitle = "Normal"; ObjectID = "oOh-Iy-ahw"; */
+"oOh-Iy-ahw.normalTitle" = "Normaali";
+
+/* Class = "UILabel"; text = "Time Limit (second)"; ObjectID = "rRX-SN-ljv"; */
+"rRX-SN-ljv.text" = "Aikaraja (toinen)";
+
+

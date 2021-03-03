@@ -1,0 +1,27 @@
+
+/* Class = "UITabBarItem"; title = "Haaste"; ObjectID = "9DL-7D-p1J"; */
+"9DL-7D-p1J.title" = "Haaste";
+
+/* Class = "UILabel"; text = "score"; ObjectID = "C12-SZ-cQb"; */
+"C12-SZ-cQb.text" = "score";
+
+/* Class = "UILabel"; text = "username"; ObjectID = "HEt-1f-9fi"; */
+"HEt-1f-9fi.text" = "username";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Mzd-n9-edW"; */
+"Mzd-n9-edW.title" = "Takaisin";
+
+/* Class = "UITabBarItem"; title = "Normaali"; ObjectID = "QTg-kL-hhW"; */
+"QTg-kL-hhW.title" = "Normaali";
+
+/* Class = "UILabel"; text = "score"; ObjectID = "XtQ-Pr-nym"; */
+"XtQ-Pr-nym.text" = "score";
+
+/* Class = "UILabel"; text = "username"; ObjectID = "azr-FT-cMS"; */
+"azr-FT-cMS.text" = "username";
+
+/* Class = "UIBarButtonItem"; title = "Koti"; ObjectID = "pzj-Hr-apK"; */
+"pzj-Hr-apK.title" = "Koti";
+
+/* Class = "UIBarButtonItem"; title = "Koti"; ObjectID = "s59-Xw-VYH"; */
+"s59-Xw-VYH.title" = "Koti";

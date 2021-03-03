@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "12345"; ObjectID = "7SK-54-Xpc"; */
+"7SK-54-Xpc.text" = "12345";
+
+/* Class = "UINavigationItem"; title = "MISSÄ SINÄ OLET ?\n"; ObjectID = "7fh-Ej-ChP"; */
+"7fh-Ej-ChP.title" = "MISSÄ SINÄ OLET ?\n";
+
+/* Class = "UIButton"; normalTitle = " ARVAUS"; ObjectID = "PZ6-Gr-69E"; */
+"PZ6-Gr-69E.normalTitle" = " ARVAUS";
+
+/* Class = "UILabel"; text = "02:00"; ObjectID = "SeX-Pl-lsd"; */
+"SeX-Pl-lsd.text" = "02:00";
+
+/* Class = "UIBarButtonItem"; title = "Takaisin"; ObjectID = "ra3-ZS-iIe"; */
+"ra3-ZS-iIe.title" = "Takaisin";

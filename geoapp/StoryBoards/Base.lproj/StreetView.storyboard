@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wHo-1t-eaq">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GuessMap-->
+        <scene sceneID="Teu-RE-TT4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GuessMap" id="BKm-9H-lr5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Kmb-gz-7P9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8k-bo-h22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-175"/>
+        </scene>
+        <!--WHERE ARE YOU ?-->
+        <scene sceneID="yGT-L4-WS5">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="gT2-9O-aiX" customClass="StreetViewController" customModule="geoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ghc-Sk-aKv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lo5-DA-OyB" customClass="GMSPanoramaView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cq8-hc-7Y2">
+                                        <rect key="frame" x="20" y="100" width="41" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="backButton"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="house.fill" catalog="system">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="finish:" destination="gT2-9O-aiX" eventType="touchUpInside" id="l8v-J5-TNm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmp-xJ-ePi">
+                                        <rect key="frame" x="311.33333333333331" y="100" width="82.666666666666686" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="GUESS">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="BKm-9H-lr5" kind="show" id="JI9-ut-fYw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjZ-N4-vMs">
+                                        <rect key="frame" x="165" y="100" width="84" height="48"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="35"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="cq8-hc-7Y2" firstAttribute="top" secondItem="lo5-DA-OyB" secondAttribute="top" constant="100" id="6Mf-ke-KGZ"/>
+                                    <constraint firstItem="gjZ-N4-vMs" firstAttribute="top" secondItem="lo5-DA-OyB" secondAttribute="top" constant="100" id="Ypv-5F-NOP"/>
+                                    <constraint firstItem="hmp-xJ-ePi" firstAttribute="top" secondItem="lo5-DA-OyB" secondAttribute="top" constant="100" id="eN9-p3-Zye"/>
+                                    <constraint firstAttribute="trailing" secondItem="hmp-xJ-ePi" secondAttribute="trailing" constant="20" id="gNu-3q-BL8"/>
+                                    <constraint firstItem="cq8-hc-7Y2" firstAttribute="leading" secondItem="lo5-DA-OyB" secondAttribute="leading" constant="20" id="zK3-lF-koB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="streetView"/>
+                        <constraints>
+                            <constraint firstItem="cq8-hc-7Y2" firstAttribute="height" secondItem="Ghc-Sk-aKv" secondAttribute="height" multiplier="0.0535714" id="7kW-HF-g1J"/>
+                            <constraint firstItem="uD9-Fh-T0X" firstAttribute="trailing" secondItem="lo5-DA-OyB" secondAttribute="trailing" id="CoG-uU-6Iz"/>
+                            <constraint firstAttribute="bottom" secondItem="lo5-DA-OyB" secondAttribute="bottom" id="Wv8-CS-zSp"/>
+                            <constraint firstItem="gjZ-N4-vMs" firstAttribute="width" secondItem="Ghc-Sk-aKv" secondAttribute="width" multiplier="0.202899" id="YNG-Rv-hny"/>
+                            <constraint firstItem="lo5-DA-OyB" firstAttribute="leading" secondItem="uD9-Fh-T0X" secondAttribute="leading" id="aD9-gu-iJc"/>
+                            <constraint firstItem="gjZ-N4-vMs" firstAttribute="height" secondItem="Ghc-Sk-aKv" secondAttribute="height" multiplier="0.0535714" id="cO4-Q9-m6w"/>
+                            <constraint firstItem="cq8-hc-7Y2" firstAttribute="width" secondItem="Ghc-Sk-aKv" secondAttribute="width" multiplier="0.0990338" id="eaG-v9-cUy"/>
+                            <constraint firstItem="hmp-xJ-ePi" firstAttribute="width" secondItem="Ghc-Sk-aKv" secondAttribute="width" multiplier="0.2" id="hX1-8B-SpU"/>
+                            <constraint firstItem="gjZ-N4-vMs" firstAttribute="centerX" secondItem="uD9-Fh-T0X" secondAttribute="centerX" id="jar-ju-V3X"/>
+                            <constraint firstItem="lo5-DA-OyB" firstAttribute="top" secondItem="Ghc-Sk-aKv" secondAttribute="top" id="sXY-HT-I3D"/>
+                            <constraint firstItem="hmp-xJ-ePi" firstAttribute="height" secondItem="Ghc-Sk-aKv" secondAttribute="height" multiplier="0.0535714" id="wMh-Ze-1KV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uD9-Fh-T0X"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WHERE ARE YOU ?" id="xoq-Sv-8tP">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="w2P-yZ-xbl"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backBtn" destination="cq8-hc-7Y2" id="0cf-xB-zFY"/>
+                        <outlet property="currentScore" destination="gjZ-N4-vMs" id="rJy-D1-fJW"/>
+                        <outlet property="guessBtn" destination="hmp-xJ-ePi" id="8Y1-oB-ZX7"/>
+                        <outlet property="panoramaView" destination="lo5-DA-OyB" id="iLw-c0-mAb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbl-OX-KGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046.376811594203" y="91.071428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0h5-Ii-ZQl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wHo-1t-eaq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c0T-5z-kup">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gT2-9O-aiX" kind="relationship" relationship="rootViewController" id="ZaV-i8-p7I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHg-AM-Fx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+    </resources>
+</document>

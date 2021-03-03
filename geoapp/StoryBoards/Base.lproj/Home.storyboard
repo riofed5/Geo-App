@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zjO-aC-W5P">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leaderboard-->
+        <scene sceneID="sgx-uL-ICu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Leaderboard" id="ljc-8D-RYH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Nbe-KE-HNI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXC-JN-MaU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1475" y="42"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="ma3-eF-TXW">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="zjO-aC-W5P" customClass="HomeVC" customModule="geoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u6h-fP-N6X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b2" translatesAutoresizingMaskIntoConstraints="NO" id="WXH-fJ-aa3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userAva" translatesAutoresizingMaskIntoConstraints="NO" id="4hB-eP-FCr">
+                                <rect key="frame" x="20" y="84.000000000000014" width="186.33333333333334" height="179.33333333333337"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ul-h5-bsw">
+                                <rect key="frame" x="269.66666666666669" y="84" width="124.33333333333331" height="30"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.22352941176470587" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.98039215690000003" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="zjO-aC-W5P" eventType="touchUpInside" id="TA8-cp-5IT"/>
+                                    <segue destination="BVR-Zl-CGz" kind="show" id="TBj-VO-iYO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agL-G6-PdY">
+                                <rect key="frame" x="269.66666666666669" y="139" width="124.33333333333331" height="30"/>
+                                <color key="backgroundColor" red="0.61176470588235299" green="0.68627450980392157" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Score Board">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ljc-8D-RYH" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="txo-rd-0Bs"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="VM6-dA-qZo" userLabel="selection">
+                                <rect key="frame" x="20" y="297.66666666666663" width="374" height="268.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="lcQ-2o-LHe" userLabel="nameAndScore">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="268.66666666666669"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjB-Ib-hkl">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="77.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="45"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO1-x5-Was">
+                                                <rect key="frame" x="0.0" y="95.333333333333314" width="374" height="77.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                <color key="textColor" red="0.2461796701" green="0.38321059940000002" blue="0.46384012699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vT-Rp-zrV">
+                                                <rect key="frame" x="0.0" y="191" width="374" height="77.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                <color key="textColor" red="0.11339334399999999" green="0.20996120569999999" blue="0.34153181310000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOh-Iy-ahw">
+                                <rect key="frame" x="103.66666666666669" y="659.33333333333337" width="207" height="62.666666666666629"/>
+                                <color key="backgroundColor" red="0.27058823529411763" green="0.4823529411764706" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="Normal">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.98039215690000003" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="em4-CM-Boa" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="8iA-4T-1Gc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVB-ee-9IJ">
+                                <rect key="frame" x="103.66666666666669" y="744.33333333333337" width="207" height="62.666666666666629"/>
+                                <color key="backgroundColor" red="0.27058823529999998" green="0.4823529412" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="Challenge">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.98039215690000003" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="2bE-HW-q1v" kind="presentation" modalPresentationStyle="fullScreen" id="ogU-sO-FoM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="homeView"/>
+                        <constraints>
+                            <constraint firstItem="4hB-eP-FCr" firstAttribute="top" secondItem="d6O-tX-Fsm" secondAttribute="top" constant="40" id="0ER-5h-lhE"/>
+                            <constraint firstItem="agL-G6-PdY" firstAttribute="top" secondItem="7Ul-h5-bsw" secondAttribute="bottom" constant="25" id="8Ya-9U-GkF"/>
+                            <constraint firstAttribute="trailing" secondItem="agL-G6-PdY" secondAttribute="trailing" constant="20" id="9b0-sc-2f8"/>
+                            <constraint firstItem="d6O-tX-Fsm" firstAttribute="trailing" secondItem="VM6-dA-qZo" secondAttribute="trailing" constant="20" id="AUe-hQ-vlF"/>
+                            <constraint firstItem="lVB-ee-9IJ" firstAttribute="width" secondItem="u6h-fP-N6X" secondAttribute="width" multiplier="0.5" id="Aju-eJ-6JI"/>
+                            <constraint firstItem="WXH-fJ-aa3" firstAttribute="trailing" secondItem="d6O-tX-Fsm" secondAttribute="trailing" id="AwY-9C-Lag"/>
+                            <constraint firstItem="WXH-fJ-aa3" firstAttribute="leading" secondItem="d6O-tX-Fsm" secondAttribute="leading" id="BZy-CU-0nF"/>
+                            <constraint firstItem="oOh-Iy-ahw" firstAttribute="top" secondItem="VM6-dA-qZo" secondAttribute="bottom" multiplier="1.15" constant="8" symbolic="YES" id="F0o-gP-8wn"/>
+                            <constraint firstItem="4hB-eP-FCr" firstAttribute="height" secondItem="u6h-fP-N6X" secondAttribute="height" multiplier="0.2" id="H2J-Ln-Tj2"/>
+                            <constraint firstItem="lVB-ee-9IJ" firstAttribute="top" secondItem="oOh-Iy-ahw" secondAttribute="bottom" multiplier="1.02" constant="8" symbolic="YES" id="ILW-2h-hfJ"/>
+                            <constraint firstItem="oOh-Iy-ahw" firstAttribute="centerX" secondItem="u6h-fP-N6X" secondAttribute="centerX" id="Lq0-od-a8T"/>
+                            <constraint firstItem="lVB-ee-9IJ" firstAttribute="centerX" secondItem="d6O-tX-Fsm" secondAttribute="centerX" id="Ms8-pT-oeA"/>
+                            <constraint firstItem="VM6-dA-qZo" firstAttribute="top" secondItem="4hB-eP-FCr" secondAttribute="bottom" multiplier="1.1" constant="8" symbolic="YES" id="Ozl-In-S3T"/>
+                            <constraint firstItem="4hB-eP-FCr" firstAttribute="leading" secondItem="d6O-tX-Fsm" secondAttribute="leading" constant="20" id="RCq-ow-kzm"/>
+                            <constraint firstItem="oOh-Iy-ahw" firstAttribute="width" secondItem="u6h-fP-N6X" secondAttribute="width" multiplier="0.5" id="Uc9-ec-V1E"/>
+                            <constraint firstItem="VM6-dA-qZo" firstAttribute="height" secondItem="u6h-fP-N6X" secondAttribute="height" multiplier="0.3" id="XV1-aH-4iJ"/>
+                            <constraint firstItem="agL-G6-PdY" firstAttribute="height" secondItem="7Ul-h5-bsw" secondAttribute="height" id="eP7-7L-ae7"/>
+                            <constraint firstAttribute="bottom" secondItem="WXH-fJ-aa3" secondAttribute="bottom" id="fSB-VU-uCI"/>
+                            <constraint firstItem="WXH-fJ-aa3" firstAttribute="top" secondItem="u6h-fP-N6X" secondAttribute="top" id="huK-Xy-PEP"/>
+                            <constraint firstItem="VM6-dA-qZo" firstAttribute="leading" secondItem="d6O-tX-Fsm" secondAttribute="leading" constant="20" id="jIl-Ae-iTT"/>
+                            <constraint firstItem="oOh-Iy-ahw" firstAttribute="height" secondItem="u6h-fP-N6X" secondAttribute="height" multiplier="0.07" id="llf-Iy-Cug"/>
+                            <constraint firstItem="lVB-ee-9IJ" firstAttribute="height" secondItem="u6h-fP-N6X" secondAttribute="height" multiplier="0.0699405" id="mJj-mN-pea"/>
+                            <constraint firstItem="d6O-tX-Fsm" firstAttribute="trailing" secondItem="7Ul-h5-bsw" secondAttribute="trailing" constant="20" id="ofm-9H-yAQ"/>
+                            <constraint firstItem="agL-G6-PdY" firstAttribute="width" secondItem="7Ul-h5-bsw" secondAttribute="width" id="uXz-KY-blr"/>
+                            <constraint firstItem="7Ul-h5-bsw" firstAttribute="width" secondItem="u6h-fP-N6X" secondAttribute="width" multiplier="0.3" id="yOu-pA-fBW"/>
+                            <constraint firstItem="4hB-eP-FCr" firstAttribute="width" secondItem="u6h-fP-N6X" secondAttribute="width" multiplier="0.45" id="yS2-sX-2NV"/>
+                            <constraint firstItem="7Ul-h5-bsw" firstAttribute="top" secondItem="d6O-tX-Fsm" secondAttribute="top" constant="40" id="yuO-bt-mu8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d6O-tX-Fsm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9cb-zs-bNj"/>
+                    <connections>
+                        <outlet property="avatar" destination="4hB-eP-FCr" id="W0f-0d-3XZ"/>
+                        <outlet property="challengeModeBtn" destination="lVB-ee-9IJ" id="6dy-aR-c3x"/>
+                        <outlet property="challengeScoreLabel" destination="0vT-Rp-zrV" id="dar-kS-nrm"/>
+                        <outlet property="currentUserScoreLabel" destination="QO1-x5-Was" id="5Hl-90-dAO"/>
+                        <outlet property="logOutBtn" destination="7Ul-h5-bsw" id="V4A-Dn-erK"/>
+                        <outlet property="nameLabel" destination="bjB-Ib-hkl" id="wLq-Ig-Xad"/>
+                        <outlet property="scoreBoardBtn" destination="agL-G6-PdY" id="OY8-cJ-ReC"/>
+                        <outlet property="selectMapBtn" destination="oOh-Iy-ahw" id="5g7-ZO-pWZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6m4-0F-Gjl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795.6521739130435" y="-36.830357142857139"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="bdZ-QH-KXj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="BVR-Zl-CGz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NG9-OE-rnq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zti-CS-eMI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462.3188405797102" y="-52.232142857142854"/>
+        </scene>
+        <!--StreetView-->
+        <scene sceneID="vEE-Zc-gTC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StreetView" id="em4-CM-Boa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6WL-SC-Rd6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T69-cm-bHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1416.6666666666667" y="137.94642857142856"/>
+        </scene>
+        <!--ChallengeMode-->
+        <scene sceneID="1o5-9T-hHb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChallengeMode" id="2bE-HW-q1v" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igN-Fr-QCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="223"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="b2" width="1500" height="2250"/>
+        <image name="userAva" width="224.5" height="256"/>
+    </resources>
+</document>

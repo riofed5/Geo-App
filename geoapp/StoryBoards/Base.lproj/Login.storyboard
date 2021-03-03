@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="25W-zr-313">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="CzO-1s-4hH">
+            <objects>
+                <viewController id="25W-zr-313" userLabel="LoginVC" customClass="LoginViewController" customModule="geoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ihN-hd-7rU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4l-pp-0vY" userLabel="container">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="62h-bO-sfq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZvD-zY-b04">
+                                        <rect key="frame" x="165.66666666666666" y="20" width="82.666666666666657" height="179.33333333333334"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QFN-Cq-w5C" userLabel="FormLogin">
+                                        <rect key="frame" x="30" y="345" width="354" height="239"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PQk-hn-Llw" userLabel="unForm">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="117"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG5-3A-SqV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="56"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                        <color key="textColor" red="0.11372549019607843" green="0.20784313725490194" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                        </variation>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZJ-wi-uma">
+                                                        <rect key="frame" x="0.0" y="61" width="354" height="56"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="username"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        </variation>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FvH-Dk-fRk" userLabel="pwForm">
+                                                <rect key="frame" x="0.0" y="122" width="354" height="117"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLo-K8-Jlc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="56"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                        <color key="textColor" red="0.11372549019607843" green="0.20784313725490194" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                        </variation>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z41-LM-lmE">
+                                                        <rect key="frame" x="0.0" y="61" width="354" height="56"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="password"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        </variation>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmX-8n-74m">
+                                        <rect key="frame" x="30" y="633.66666666666663" width="354" height="40.333333333333371"/>
+                                        <color key="backgroundColor" red="1" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="loginSignIn"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="0.94509803921568625" green="0.98039215686274506" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="signInCustom:" destination="25W-zr-313" eventType="touchUpInside" id="wxr-1T-8cn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR CONNECT WITH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKr-Fz-PVN">
+                                        <rect key="frame" x="30" y="697" width="354" height="33"/>
+                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="15"/>
+                                        <color key="textColor" red="0.376153510334228" green="0.31312515559949566" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQq-d3-wtB">
+                                        <rect key="frame" x="176" y="756" width="62" height="40.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" backgroundImage="google icon">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInWithGoogle:" destination="25W-zr-313" eventType="touchUpInside" id="9Ct-Fb-jeW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="62h-bO-sfq" secondAttribute="bottom" id="9di-70-ksE"/>
+                                    <constraint firstItem="62h-bO-sfq" firstAttribute="leading" secondItem="r4l-pp-0vY" secondAttribute="leading" id="EDd-dc-3Yv"/>
+                                    <constraint firstItem="HmX-8n-74m" firstAttribute="centerX" secondItem="r4l-pp-0vY" secondAttribute="centerX" id="Jom-Ts-o6x"/>
+                                    <constraint firstItem="oKr-Fz-PVN" firstAttribute="leading" secondItem="r4l-pp-0vY" secondAttribute="leading" constant="30" id="KOr-of-1w5"/>
+                                    <constraint firstItem="ZvD-zY-b04" firstAttribute="top" secondItem="r4l-pp-0vY" secondAttribute="top" constant="20" symbolic="YES" id="MEb-kU-ZWR"/>
+                                    <constraint firstItem="QFN-Cq-w5C" firstAttribute="leading" secondItem="r4l-pp-0vY" secondAttribute="leading" constant="30" id="OVY-PZ-leE"/>
+                                    <constraint firstAttribute="trailing" secondItem="QFN-Cq-w5C" secondAttribute="trailing" constant="30" id="W4m-HZ-iGE"/>
+                                    <constraint firstItem="ZvD-zY-b04" firstAttribute="centerX" secondItem="r4l-pp-0vY" secondAttribute="centerX" id="X9M-vh-SZB"/>
+                                    <constraint firstAttribute="bottom" secondItem="HmX-8n-74m" secondAttribute="bottom" multiplier="1.3" constant="20" symbolic="YES" id="bUs-6v-1Ih"/>
+                                    <constraint firstAttribute="trailing" secondItem="oKr-Fz-PVN" secondAttribute="trailing" constant="30" id="eEj-kP-QDJ"/>
+                                    <constraint firstItem="HmX-8n-74m" firstAttribute="leading" secondItem="r4l-pp-0vY" secondAttribute="leading" constant="30" id="is6-18-VKN"/>
+                                    <constraint firstItem="wQq-d3-wtB" firstAttribute="centerX" secondItem="r4l-pp-0vY" secondAttribute="centerX" id="jHp-q0-WOa"/>
+                                    <constraint firstItem="62h-bO-sfq" firstAttribute="top" secondItem="r4l-pp-0vY" secondAttribute="top" id="jp2-NL-Ifl"/>
+                                    <constraint firstAttribute="bottom" secondItem="wQq-d3-wtB" secondAttribute="bottom" multiplier="1.1" constant="20" symbolic="YES" id="kIX-nJ-GiL"/>
+                                    <constraint firstAttribute="trailing" secondItem="62h-bO-sfq" secondAttribute="trailing" id="moE-8O-6Da"/>
+                                    <constraint firstAttribute="bottom" secondItem="QFN-Cq-w5C" secondAttribute="bottom" multiplier="1.5" constant="20" symbolic="YES" id="n7o-fn-Zg3"/>
+                                    <constraint firstAttribute="bottom" secondItem="oKr-Fz-PVN" secondAttribute="bottom" multiplier="1.2" constant="20" symbolic="YES" id="qbE-yu-QGS"/>
+                                    <constraint firstAttribute="trailing" secondItem="HmX-8n-74m" secondAttribute="trailing" constant="30" id="uUS-n4-AaD"/>
+                                    <constraint firstItem="ZvD-zY-b04" firstAttribute="height" secondItem="r4l-pp-0vY" secondAttribute="height" multiplier="0.2" id="vD8-Xj-OVK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="loginView"/>
+                        <constraints>
+                            <constraint firstItem="wQq-d3-wtB" firstAttribute="width" secondItem="ihN-hd-7rU" secondAttribute="width" multiplier="0.15" id="8s2-na-2Gl"/>
+                            <constraint firstItem="r4l-pp-0vY" firstAttribute="leading" secondItem="m9M-8C-NMS" secondAttribute="leading" id="Fv3-7I-Bcg"/>
+                            <constraint firstItem="oKr-Fz-PVN" firstAttribute="height" secondItem="ihN-hd-7rU" secondAttribute="height" multiplier="0.0369458" id="MYr-RO-ejE"/>
+                            <constraint firstAttribute="bottom" secondItem="r4l-pp-0vY" secondAttribute="bottom" id="VQt-MU-CKC"/>
+                            <constraint firstItem="r4l-pp-0vY" firstAttribute="top" secondItem="ihN-hd-7rU" secondAttribute="top" id="n6e-se-lUA"/>
+                            <constraint firstItem="wQq-d3-wtB" firstAttribute="height" secondItem="ihN-hd-7rU" secondAttribute="height" multiplier="0.045" id="nWq-nw-OJW"/>
+                            <constraint firstItem="m9M-8C-NMS" firstAttribute="trailing" secondItem="r4l-pp-0vY" secondAttribute="trailing" id="och-an-FDU"/>
+                            <constraint firstItem="HmX-8n-74m" firstAttribute="height" secondItem="ihN-hd-7rU" secondAttribute="height" multiplier="0.045" id="q5f-sU-VIg"/>
+                            <constraint firstItem="ZvD-zY-b04" firstAttribute="width" secondItem="ihN-hd-7rU" secondAttribute="width" multiplier="0.2" id="wUx-bV-wfa"/>
+                            <constraint firstItem="QFN-Cq-w5C" firstAttribute="height" secondItem="ihN-hd-7rU" secondAttribute="height" multiplier="0.8/3" id="zwD-E5-kAF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m9M-8C-NMS"/>
+                    </view>
+                    <connections>
+                        <outlet property="googleSignInBtn" destination="wQq-d3-wtB" id="kZi-Nz-etf"/>
+                        <outlet property="passwordLabel" destination="rLo-K8-Jlc" id="gWH-rE-3X8"/>
+                        <outlet property="passwordTextField" destination="Z41-LM-lmE" id="FG4-iA-8Iz"/>
+                        <outlet property="signInButton" destination="HmX-8n-74m" id="pil-o7-YcA"/>
+                        <outlet property="textLabel" destination="oKr-Fz-PVN" id="qO2-e7-O7h"/>
+                        <outlet property="usernameLabel" destination="BG5-3A-SqV" id="gZc-sx-s0w"/>
+                        <outlet property="usernameTextField" destination="wZJ-wi-uma" id="sNt-98-FQM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVe-T2-qA5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-847.20000000000005" y="-172.16748768472908"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="2000" height="1333.5"/>
+        <image name="google icon" width="294" height="203"/>
+        <image name="icon" width="100" height="100"/>
+    </resources>
+</document>

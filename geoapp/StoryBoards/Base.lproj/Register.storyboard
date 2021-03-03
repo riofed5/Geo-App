@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bdx-dW-j6b">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RegisterVC-->
+        <scene sceneID="nCx-iG-Zrn">
+            <objects>
+                <viewController id="bdx-dW-j6b" userLabel="RegisterVC" customClass="RegisterViewController" customModule="geoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WQG-qQ-13R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilG-z0-XBu" userLabel="container">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Nol-m7-LS9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="QeE-g4-d8t">
+                                        <rect key="frame" x="165.66666666666666" y="30" width="82.666666666666657" height="179.33333333333334"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H4u-b9-ZuK" userLabel="registerForm">
+                                        <rect key="frame" x="30" y="371.66666666666674" width="354" height="358.33333333333326"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="a8F-Cu-rsq" userLabel="unForm">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="116"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Au2-LB-Vcs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="55.666666666666664"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                        <color key="textColor" red="0.11372549019607843" green="0.20784313725490194" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                        </variation>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mkU-X5-qvE">
+                                                        <rect key="frame" x="0.0" y="60.666666666666629" width="354" height="55.333333333333343"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="username"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        </variation>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ybr-hh-fPP" userLabel="pwForm">
+                                                <rect key="frame" x="0.0" y="121" width="354" height="116.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT3-J7-ywC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="55.666666666666664"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                        <color key="textColor" red="0.11372549019607843" green="0.20784313725490194" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                        </variation>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0E4-1n-cyU">
+                                                        <rect key="frame" x="0.0" y="60.666666666666686" width="354" height="55.666666666666657"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="password"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        </variation>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0vD-1O-No5" userLabel="eForm">
+                                                <rect key="frame" x="0.0" y="242.33333333333331" width="354" height="116"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bq3-2h-m2W">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="55.333333333333336"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                        <color key="textColor" red="0.11372549019607843" green="0.20784313725490194" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                        </variation>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSS-qt-VSU">
+                                                        <rect key="frame" x="0.0" y="60.333333333333371" width="354" height="55.666666666666657"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="email"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        </variation>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKX-Ox-ASU">
+                                        <rect key="frame" x="30" y="756" width="354" height="40.333333333333371"/>
+                                        <color key="backgroundColor" red="1" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="registerSignUp"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="signUp:" destination="bdx-dW-j6b" eventType="touchUpInside" id="ds4-aR-qkj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="H4u-b9-ZuK" secondAttribute="trailing" constant="30" id="2A4-US-TTy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nol-m7-LS9" secondAttribute="bottom" id="FWl-TG-G2D"/>
+                                    <constraint firstItem="Nol-m7-LS9" firstAttribute="leading" secondItem="ilG-z0-XBu" secondAttribute="leading" id="Hlc-jd-hWC"/>
+                                    <constraint firstItem="QeE-g4-d8t" firstAttribute="top" secondItem="ilG-z0-XBu" secondAttribute="top" constant="30" id="O2x-0Z-bRM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nol-m7-LS9" secondAttribute="trailing" id="V5B-dm-4Pp"/>
+                                    <constraint firstItem="Nol-m7-LS9" firstAttribute="top" secondItem="ilG-z0-XBu" secondAttribute="top" id="XGQ-dr-Ubk"/>
+                                    <constraint firstItem="QeE-g4-d8t" firstAttribute="height" secondItem="ilG-z0-XBu" secondAttribute="height" multiplier="0.2" id="Xwj-uX-W2G"/>
+                                    <constraint firstAttribute="bottom" secondItem="H4u-b9-ZuK" secondAttribute="bottom" multiplier="1.2" constant="20" symbolic="YES" id="e6f-LW-9JD"/>
+                                    <constraint firstAttribute="bottom" secondItem="UKX-Ox-ASU" secondAttribute="bottom" multiplier="1.1" constant="20" symbolic="YES" id="fO4-3Z-yb5"/>
+                                    <constraint firstItem="QeE-g4-d8t" firstAttribute="centerX" secondItem="ilG-z0-XBu" secondAttribute="centerX" id="mTn-nW-b3k"/>
+                                    <constraint firstItem="H4u-b9-ZuK" firstAttribute="leading" secondItem="ilG-z0-XBu" secondAttribute="leading" constant="30" id="nTz-m0-66g"/>
+                                    <constraint firstAttribute="trailing" secondItem="UKX-Ox-ASU" secondAttribute="trailing" constant="30" id="u4p-lE-6no"/>
+                                    <constraint firstItem="UKX-Ox-ASU" firstAttribute="leading" secondItem="ilG-z0-XBu" secondAttribute="leading" constant="30" id="we1-2d-4zg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="registerView"/>
+                        <constraints>
+                            <constraint firstItem="ilG-z0-XBu" firstAttribute="top" secondItem="WQG-qQ-13R" secondAttribute="top" id="LkR-m0-oWY"/>
+                            <constraint firstAttribute="bottom" secondItem="ilG-z0-XBu" secondAttribute="bottom" id="bYf-di-oxu"/>
+                            <constraint firstItem="ilG-z0-XBu" firstAttribute="leading" secondItem="WQG-qQ-13R" secondAttribute="leading" id="fxH-UR-4Rv"/>
+                            <constraint firstItem="H4u-b9-ZuK" firstAttribute="height" secondItem="WQG-qQ-13R" secondAttribute="height" multiplier="0.4" id="gVZ-Cn-tsi"/>
+                            <constraint firstAttribute="trailing" secondItem="ilG-z0-XBu" secondAttribute="trailing" id="jcW-9R-Zn7"/>
+                            <constraint firstItem="UKX-Ox-ASU" firstAttribute="height" secondItem="WQG-qQ-13R" secondAttribute="height" multiplier="0.045" id="vrg-P1-E6o"/>
+                            <constraint firstItem="QeE-g4-d8t" firstAttribute="width" secondItem="WQG-qQ-13R" secondAttribute="width" multiplier="0.2" id="yla-zo-C13"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zrq-DE-aOj"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ZSS-qt-VSU" id="zdC-hG-tQy"/>
+                        <outlet property="passwordTextField" destination="0E4-1n-cyU" id="SFO-5U-Kle"/>
+                        <outlet property="signUpButton" destination="UKX-Ox-ASU" id="WH1-BL-hy1"/>
+                        <outlet property="usernameTextField" destination="mkU-X5-qvE" id="eoK-5t-lJf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kd6-4I-W2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="147.99107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="2000" height="1333.5"/>
+        <image name="icon" width="100" height="100"/>
+    </resources>
+</document>

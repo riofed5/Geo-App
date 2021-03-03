@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Challenge Mode Score Table View Controller-->
+        <scene sceneID="aWe-uo-ELQ">
+            <objects>
+                <tableViewController id="xt6-h7-UUf" customClass="ChallengeModeScoreTableViewController" customModule="geoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="der-pr-Dt5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="challengeScoreItemCell" rowHeight="120" id="DgV-Fl-iYk" customClass="ChallengeModeScoreTableViewCell" customModule="geoapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DgV-Fl-iYk" id="W3B-YD-Pf6">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="180" translatesAutoresizingMaskIntoConstraints="NO" id="6ni-Rl-hmO">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="120"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKU-00-taW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="165.66666666666666" height="120"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="37"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6T-DK-6El">
+                                                    <rect key="frame" x="224.33333333333337" y="0.0" width="149.66666666666663" height="120"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="27"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="37"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="D6T-DK-6El" firstAttribute="height" secondItem="6ni-Rl-hmO" secondAttribute="height" id="Lkm-Cf-mdL"/>
+                                                <constraint firstItem="D6T-DK-6El" firstAttribute="width" secondItem="6ni-Rl-hmO" secondAttribute="width" multiplier="0.4" id="imv-Cg-0TW"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6ni-Rl-hmO" firstAttribute="leading" secondItem="W3B-YD-Pf6" secondAttribute="leading" constant="20" id="81P-Mu-4BS"/>
+                                        <constraint firstAttribute="trailing" secondItem="6ni-Rl-hmO" secondAttribute="trailing" constant="20" id="ZJO-m2-rbi"/>
+                                        <constraint firstAttribute="bottom" secondItem="6ni-Rl-hmO" secondAttribute="bottom" id="f8a-2t-M14"/>
+                                        <constraint firstItem="6ni-Rl-hmO" firstAttribute="top" secondItem="W3B-YD-Pf6" secondAttribute="top" id="wLx-rx-wow"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="RKU-00-taW" firstAttribute="height" secondItem="DgV-Fl-iYk" secondAttribute="height" id="Qe7-lp-a5D"/>
+                                    <constraint firstItem="RKU-00-taW" firstAttribute="width" secondItem="DgV-Fl-iYk" secondAttribute="width" multiplier="0.4" id="ZZX-Z6-sgL"/>
+                                </constraints>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xt6-h7-UUf" id="ZCV-Rb-j3g"/>
+                            <outlet property="delegate" destination="xt6-h7-UUf" id="JRZ-Lg-Pu5"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bva-ST-dMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="-210"/>
+        </scene>
+    </scenes>
+</document>

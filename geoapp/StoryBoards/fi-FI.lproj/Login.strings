@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Käyttäjätunnus\n"; ObjectID = "BG5-3A-SqV"; */
+"BG5-3A-SqV.text" = "Käyttäjätunnus\n";
+
+/* Class = "UIButton"; normalTitle = "Kytkeytyä"; ObjectID = "HmX-8n-74m"; */
+"HmX-8n-74m.normalTitle" = "Kytkeytyä";
+
+/* Class = "UITextField"; placeholder = "Salasana"; ObjectID = "Z41-LM-lmE"; */
+"Z41-LM-lmE.placeholder" = "Salasana";
+
+/* Class = "UILabel"; text = "TAI Yhdistä\n"; ObjectID = "oKr-Fz-PVN"; */
+"oKr-Fz-PVN.text" = "TAI Yhdistä\n";
+
+/* Class = "UILabel"; text = "Salasana"; ObjectID = "rLo-K8-Jlc"; */
+"rLo-K8-Jlc.text" = "Salasana";
+
+/* Class = "UITextField"; placeholder = "Käyttäjätunnus\n"; ObjectID = "wZJ-wi-uma"; */
+"wZJ-wi-uma.placeholder" = "Käyttäjätunnus\n";

@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Trial Mode"; ObjectID = "Ye7-xT-Tci"; */
+"Ye7-xT-Tci.normalTitle" = "Kokeilutila";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "mNL-K0-iHN"; */
+"mNL-K0-iHN.normalTitle" = "Ilmoittautua";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "sih-eT-Y5z"; */
+"sih-eT-Y5z.normalTitle" = "Kytkeytyä";

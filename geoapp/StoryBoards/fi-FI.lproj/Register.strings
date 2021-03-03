@@ -1,0 +1,21 @@
+
+/* Class = "UITextField"; placeholder = "Salasana\n"; ObjectID = "0E4-1n-cyU"; */
+"0E4-1n-cyU.placeholder" = "Salasana\n";
+
+/* Class = "UILabel"; text = "Käyttäjätunnus\n"; ObjectID = "Au2-LB-Vcs"; */
+"Au2-LB-Vcs.text" = "Käyttäjätunnus\n";
+
+/* Class = "UILabel"; text = "Sähköposti\n"; ObjectID = "Bq3-2h-m2W"; */
+"Bq3-2h-m2W.text" = "Sähköposti\n";
+
+/* Class = "UIButton"; normalTitle = "Ilmoittautua"; ObjectID = "UKX-Ox-ASU"; */
+"UKX-Ox-ASU.normalTitle" = "Ilmoittautua";
+
+/* Class = "UITextField"; placeholder = "Sähköposti\n"; ObjectID = "ZSS-qt-VSU"; */
+"ZSS-qt-VSU.placeholder" = "Sähköposti\n";
+
+/* Class = "UILabel"; text = "Salasana\n"; ObjectID = "cT3-J7-ywC"; */
+"cT3-J7-ywC.text" = "Salasana\n";
+
+/* Class = "UITextField"; placeholder = "Käyttäjätunnus\n"; ObjectID = "mkU-X5-qvE"; */
+"mkU-X5-qvE.placeholder" = "Käyttäjätunnus\n";

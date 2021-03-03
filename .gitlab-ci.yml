@@ -1,0 +1,30 @@
+
+
+
+stages: 
+    - build 
+
+before_script:
+  - export LANG=en_US.UTF-8
+  - export LANGUAGE=en_US:en
+  - export LC_CTYPE=en_US.UTF-8
+  - export LC_COLLATE="en_US.UTF-8"
+  - export LC_MESSAGES="en_US.UTF-8"
+  - export LC_RESPONSE="en_US.UTF-8"
+  - export LC_NUMERIC=fr_FR.UTF-8
+  - export LC_TIME=fr_FR.UTF-8
+  - export LC_MONETARY=fr_FR.UTF-8
+  - export LC_PAPER=fr_FR.UTF-8
+  - export LC_NAME=fr_FR.UTF-8
+  - export LC_ADDRESS=fr_FR.UTF-8
+  - export LC_TELEPHONE=fr_FR.UTF-8
+  - export LC_MEASUREMENT=fr_FR.UTF-8
+  - export LC_IDENTIFICATION=fr_FR.UTF-8
+
+build_project: 
+    stage: build 
+    script: 
+        - xcodebuild clean -workspace geoapp.xcworkspace -scheme geoapp | xcpretty 
+        - xcodebuild test -workspace geoapp.xcworkspace -scheme geoapp -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' | xcpretty -s 
+    tags: 
+       - geoapp

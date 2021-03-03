@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="MainViewController" customModule="geoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhb-iE-GQh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="uGm-UN-zsY">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="FBH-E6-tlg">
+                                        <rect key="frame" x="50" y="536.66666666666663" width="314" height="225"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye7-xT-Tci">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="45"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                <state key="normal" title="Trial Mode">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
+                                                </variation>
+                                                <connections>
+                                                    <segue destination="54V-RH-jRw" kind="presentation" modalPresentationStyle="fullScreen" id="sEp-zP-dQW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sih-eT-Y5z">
+                                                <rect key="frame" x="0.0" y="90" width="314" height="45"/>
+                                                <color key="backgroundColor" red="0.27058823529411763" green="0.4823529411764706" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                <state key="normal" title="Sign In">
+                                                    <color key="titleColor" red="0.94509803921568625" green="0.98039215686274506" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
+                                                </variation>
+                                                <connections>
+                                                    <segue destination="XtC-YV-SAu" kind="show" id="rFo-oB-1oD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNL-K0-iHN">
+                                                <rect key="frame" x="0.0" y="180" width="314" height="45"/>
+                                                <color key="backgroundColor" red="0.6588235294117647" green="0.85490196078431369" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" red="0.94509803921568625" green="0.98039215686274506" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
+                                                </variation>
+                                                <connections>
+                                                    <segue destination="WQW-4b-Ykq" kind="show" id="oCI-RI-RmJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="pEq-HA-Oyx">
+                                        <rect key="frame" x="-1" y="92" width="414" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FBH-E6-tlg" secondAttribute="trailing" constant="50" id="6Oa-8B-hyL"/>
+                                    <constraint firstAttribute="bottom" secondItem="uGm-UN-zsY" secondAttribute="bottom" id="8Nv-DX-QlA"/>
+                                    <constraint firstItem="FBH-E6-tlg" firstAttribute="leading" secondItem="Mhb-iE-GQh" secondAttribute="leading" constant="50" id="b0f-nr-t6n"/>
+                                    <constraint firstItem="uGm-UN-zsY" firstAttribute="top" secondItem="Mhb-iE-GQh" secondAttribute="top" id="k8p-Xe-ug3"/>
+                                    <constraint firstAttribute="bottom" secondItem="FBH-E6-tlg" secondAttribute="bottom" multiplier="1.15" constant="20" symbolic="YES" id="twm-6h-C9Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="uGm-UN-zsY" secondAttribute="trailing" id="wuo-pL-lfc"/>
+                                    <constraint firstItem="uGm-UN-zsY" firstAttribute="leading" secondItem="Mhb-iE-GQh" secondAttribute="leading" id="xkG-1O-aT6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="mainView"/>
+                        <constraints>
+                            <constraint firstItem="Mhb-iE-GQh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="5H2-py-Oec"/>
+                            <constraint firstItem="Mhb-iE-GQh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HSw-cS-WvA"/>
+                            <constraint firstItem="Mhb-iE-GQh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZnV-eL-pAv"/>
+                            <constraint firstItem="FBH-E6-tlg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.251116" id="svu-An-gp9"/>
+                            <constraint firstItem="Mhb-iE-GQh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="urw-gc-pX8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainFreeModeBtn" destination="Ye7-xT-Tci" id="dxN-uU-hFD"/>
+                        <outlet property="mainRegisterBtn" destination="mNL-K0-iHN" id="mH6-Mh-1Pr"/>
+                        <outlet property="mainSignInBtn" destination="sih-eT-Y5z" id="4EL-XP-f4M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="7vh-rc-Hif">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="XtC-YV-SAu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Yud-dY-UP3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCo-lJ-kUk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="139"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="vEM-v5-pyM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" id="WQW-4b-Ykq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="b9h-Qq-sJK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ag8-6K-B3w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="378"/>
+        </scene>
+        <!--StreetView-->
+        <scene sceneID="tr2-9s-zve">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StreetView" id="54V-RH-jRw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvb-cW-gEL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="-87"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="2000" height="1333.5"/>
+        <image name="icon" width="100" height="100"/>
+    </resources>
+</document>
